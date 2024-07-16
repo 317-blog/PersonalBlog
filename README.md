@@ -1,1 +1,1 @@
-The personal blog backend, written with fastapi.Originally by enishk@foxmail.com
+The personal blog backend, written with fastapi.Originally written by enishk@foxmail.com
