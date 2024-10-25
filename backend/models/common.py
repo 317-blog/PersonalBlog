@@ -4,7 +4,7 @@ from tortoise import fields
 
 class CommonModel(Model):
     """
-    Common model for all pg_models
+    Common model for all models
     """
     id = fields.IntField(pk=True)
     created_at = fields.DatetimeField(auto_now_add=True, description="创建时间", null=False)

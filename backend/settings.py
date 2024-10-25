@@ -8,13 +8,14 @@ pg_config = {
                 'user': 'fastapi',
                 'password': 'fastapi',
                 'database': 'PersonalBlog',
-            }
+            },
+            'max_size': 128,
         },
     },
-    'apps': {
-        'backend': {
-            'models': ['pg_models', 'aerich.pg_models'],  # models的具体路径
+    "apps": {
+        "models": {
+            'models': ["aerich.models", "backend.models"],  # models的具体路径
             'default_connection': 'default',
-        }
+        },
     }
 }

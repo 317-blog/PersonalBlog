@@ -1,5 +1,5 @@
 from tortoise import fields
-from common import CommonModel
+from backend.models.common import CommonModel
 
 
 class User(CommonModel):
@@ -9,6 +9,4 @@ class User(CommonModel):
     articles: fields.ReverseRelation["Article"]
 
     class Meta:
-        table = 'user'
-        table_description = '用户表'
-
+        table = "user"

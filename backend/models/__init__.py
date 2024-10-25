@@ -1,5 +1,6 @@
-from common import *
-from backend.pg_models.article import *
-from backend.pg_models.user import *
+from backend.models.user import User
+from backend.models.article import Article
 
 
+if __name__ == '__main__':
+    __models__ = [Article, User]
